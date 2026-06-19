@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AventuraXtrema</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER + NAV -->
+    <header>
+        <nav>
+            <span class="nav-logo">AventuraXtrema</span>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#tours">Nuestros Tours</a></li>
+                <li><a href="#itinerario">Itinerario</a></li>
+                <li><a href="#reservar">Reservar</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SECCIÓN INICIO (hero con imagen de fondo) -->
+        <section id="inicio" class="hero">
+            <div class="hero-contenido">
+                <h1>Explora lo Inexplorado</h1>
+                <p>Trekking · Rappel · Kayak · Escalada</p>
+                <a href="#tours" class="btn-hero">Ver Tours</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="seccion">
+            <div class="nosotros-flex">
+                <div class="nosotros-texto">
+                    <h2>¿Quiénes somos?</h2>
+                    <p>
+                        Somos una agencia de turismo aventura con más de 10 años de experiencia
+                        recorriendo los rincones más salvajes de la Región de Ñuble. Nuestros guías
+                        certificados garantizan seguridad y una experiencia inolvidable.
+                    </p>
+                    <p>
+                        Operamos con grupos pequeños para darte una atención personalizada en cada
+                        expedición. ¡Tu aventura empieza aquí!
+                    </p>
+                </div>
+                <aside class="aside-datos">
+                    <h3>Por qué elegirnos</h3>
+                    <ul>
+                        <li>✅ +100 expediciones realizadas</li>
+                        <li>✅ Guías certificados</li>
+                        <li>✅ Grupos reducidos (máx. 10 personas)</li>
+                        <li>✅ Equipamiento incluido</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- SECCIÓN TOURS (Carousel Bootstrap) -->
+        <section id="tours" class="seccion seccion-gris">
+            <h2 class="titulo-centrado">Nuestros Tours</h2>
+
+            <div id="carouselTours" class="carousel slide carousel-box" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselTours" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselTours" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselTours" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/trekking.jpg" class="d-block w-100" alt="Trekking en montaña">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Trekking Ex Refugio Waldorf</h5>
+                            <p>3 días por senderos de alta montaña.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/kayak.jpg" class="d-block w-100" alt="Kayak en lago">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Kayak Laguna del Huemul</h5>
+                            <p>Aventura acuática en bosque nativo en alta montaña.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/rappel.jpg" class="d-block w-100" alt="Rappel cascada">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Rappel Cascada Rucapiren</h5>
+                            <p>Descenso de 50 a 60 metros en cascada.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTours" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTours" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN ITINERARIO (Tabla) -->
+        <section id="itinerario" class="seccion">
+            <h2 class="titulo-centrado">Itinerario de Tours</h2>
+
+            <table class="table table-bordered table-hover tabla-custom">
+                <thead>
+                    <tr>
+                        <th>Destino</th>
+                        <th>Dificultad</th>
+                        <th>Precio</th>
+                        <th>Temporada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Trekking Ex Refugio Waldorf</td>
+                        <td>Alta</td>
+                        <td>$85.000</td>
+                        <td rowspan="2">Nov – Mar</td>
+                    </tr>
+                    <tr>
+                        <td>Rappel Cascada Rucapiren</td>
+                        <td>Media</td>
+                        <td>$45.000</td>
+                    </tr>
+                    <tr>
+                        <td>Kayak Laguna del Huemul</td>
+                        <td>Baja</td>
+                        <td>$30.000</td>
+                        <td>Todo el año</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text-center fw-bold">Pack Familiar (todos los tours)</td>
+                        <td>$180.000</td>
+                        <td>Nov – Mar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECCIÓN RESERVAR (con imagen de fondo + lista ol) -->
+        <section id="reservar" class="seccion-reserva">
+            <div class="reserva-box">
+                <h2>Pasos para Reservar tu Aventura</h2>
+                <ol>
+                    <li>Elige el tour que quieres en la tabla de itinerario.</li>
+                    <li>Contáctanos por correo o teléfono con tus datos.</li>
+                    <li>Selecciona la fecha y número de participantes.</li>
+                    <li>Paga el 50% de abono para confirmar tu reserva.</li>
+                    <li>Recibe la confirmación y detalles por correo.</li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <div class="footer-flex">
+            <div>
+                <h4>AventuraXtrema</h4>
+                <p>Chillán, Región de Ñuble</p>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <p>📧 contacto@aventuraxtrema.cl</p>
+                <p>📞 +56 9 2023 2031</p>
+            </div>
+            <div>
+                <h4>Navegar</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#tours">Tours</a></li>
+                    <li><a href="#itinerario">Itinerario</a></li>
+                    <li><a href="#reservar">Reservar</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 AventuraXtrema. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
